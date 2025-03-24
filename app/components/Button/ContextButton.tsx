@@ -1,8 +1,7 @@
-import React from 'react'
-
-const ContextButton = ({ id, label, onClick}) => {
+'use client'
+const ContextButton = ({ id, label }) => {
   return (
-    <button>
+    <button onClick={() => alert(`${label} ${id}`)}>
         {label}
     </button>
   )

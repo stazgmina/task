@@ -5,7 +5,7 @@ import Link from 'next/link'
 const UsersRecord = ({ id ,first_name, last_name, initials, email, status }) => {
   return (
     <Link href={`/Pages/Addresses/${first_name}_${last_name}/${id}`}>
-      <Record id={id}>
+      <Record>
           <p>{`${first_name}  ${last_name}`}</p>
           <p>{initials}</p>
           <p>{email}</p>
